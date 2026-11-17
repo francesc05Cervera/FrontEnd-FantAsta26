@@ -19,7 +19,7 @@ npm test -- --watch=false
 - Build: `npm ci && npm run build`
 - Publish directory: `dist/frontend-fantasta26/browser`
 - `public/_redirects` configura il fallback SPA a `index.html`.
-- Prima del deploy configurare `APP_CORS_ALLOWEDORIGINS` nei tre backend con l'origine esatta HTTPS del frontend (e `http://localhost:4200` per lo sviluppo), separando le origini con virgole. Non usare slash finale.
+- Prima del deploy configurare `AUTH_CORS_ALLOWEDORIGINS` su AuthService e `APP_CORS_ALLOWEDORIGINS` su PlayerService e AuctionService con l'origine esatta HTTPS del frontend (e `http://localhost:4200` per lo sviluppo), separando le origini con virgole. Non usare slash finale.
 - Gli URL API sono incorporati nella build; per cambiarli modificare `src/environments/environment.ts` e ricostruire.
 
 ## Funzioni e limiti
