@@ -7,7 +7,7 @@ npm ci
 npm start
 ```
 
-Aprire http://localhost:4200. La configurazione degli URL backend si trova in `src/environments/environment.ts`: per usare i servizi locali usare come riferimento `environment.local.example.ts` e sostituire gli URL prima della build. Non inserire segreti in questo progetto: la chiave API-Football rimane esclusivamente sul backend.
+Aprire http://localhost:4200/#/login. La SPA usa URL con hash, ad esempio `/#/login` e `/#/dashboard`: i vecchi collegamenti senza hash possono richiedere un redirect o la navigazione dalla pagina iniziale. La configurazione degli URL backend si trova in `src/environments/environment.ts`: per usare i servizi locali usare come riferimento `environment.local.example.ts` e sostituire gli URL prima della build. Non inserire segreti in questo progetto: la chiave API-Football rimane esclusivamente sul backend.
 
 ```sh
 npm run build
